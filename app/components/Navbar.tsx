@@ -24,7 +24,7 @@ const Navbar = () => {
             </Link>
             {/*  */}
             <div className='rounded-full border px-5 py-2'>
-                search comp
+                search here now
             </div>
             <UserNav/>
         </div>
