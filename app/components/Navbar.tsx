@@ -23,7 +23,7 @@ const Navbar = () => {
                 />
             </Link>
             {/*  */}
-            <div className='rounded-full border px-5 py-2 bg-pink-100'>
+            <div className='rounded-full border px-5 py-2'>
                 search comp
             </div>
             <UserNav/>
