@@ -17,7 +17,7 @@ const MapFilterItems = () => {
             params.set(name, value)
             return params.toString()
         },[searchParams])
-        
+
   return (
     <div className='flex gap-x-10 mt-5 w-full overflow-x-scroll no-scrollbar'>
         {categoryItems.map((item, i)=>{
@@ -27,7 +27,7 @@ const MapFilterItems = () => {
                 key={i}
                 className={cn(
                     search === item.name ? 
-                    "border-b-2 border-black pb-2 flex-shrink-0" : "opacity-70 flex-shrink-0", 
+                    "border-b-2 text-primary border-primary pb-1 flex-shrink-0" : "opacity-60 flex-shrink-0", 
                     "flex flex-col gap-y-3 items-center"
                 )}
                 >

@@ -1,6 +1,10 @@
 import type { ReactNode } from 'react'
 
-const LayoutCreation = ({children}: {children: ReactNode}) => {
+type LayoutType = {
+    children: ReactNode
+}
+
+const LayoutCreation = ({children}: LayoutType) => {
   return (
     <div className='mt-10'> {children}</div>
   )

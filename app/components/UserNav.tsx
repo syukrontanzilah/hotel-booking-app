@@ -16,6 +16,7 @@ import {
 } from "@kinde-oss/kinde-auth-nextjs/components";
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server';
 import Link from 'next/link';
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
 
 const UserNav = async () => {
     const {getUser} = getKindeServerSession();
@@ -31,7 +32,8 @@ const UserNav = async () => {
                     '/user.png'
                 } 
                 alt='user-img' 
-                className='rounded-full w-8 h-8 lg:block'/>
+                className='rounded-full w-8 h-8 lg:block'
+                />
             </div>
         </DropdownMenuTrigger>
         <DropdownMenuContent align='end' className='w-[200px]'>
