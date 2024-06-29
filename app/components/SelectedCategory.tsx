@@ -5,9 +5,10 @@ import { Card, CardHeader } from '@/components/ui/card'
 import Image from 'next/image'
 
 const SelectedCategory = () => {
-    const [selectCategory, setSelectCategory] = useState<string | null>(null);
+    const [selectCategory, setSelectCategory] = useState<string | undefined>(undefined);
   return (
-    <div className='grid grid-cols-4 gap-8 mt-10 w-3/5 mx-auto '>
+    <div className='grid grid-cols-4 gap-8 mt-10 w-3/5 mx-auto mb-36'>
+        <input type='hidden' name='categoryName' value={selectCategory as string} className=''/>
         {categoryItems.map((item, i)=>{
             return(
                 <div className='cursor-pointer' key={item.id}>
